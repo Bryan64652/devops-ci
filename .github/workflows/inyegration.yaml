@@ -9,7 +9,7 @@ jobs:
            with:
                 fetch-depth: 0
 
-         - uses: SonarSourse/sonarqube-scan-action@v5
+         - uses: SonarSource/sonarqube-scan-action@v5
            env:
             SONA_TOKEN: ${{ secrets.SONAR_TOKEN }}
             SONA_HOST_URL: ${{secrets.SONAR_HOST_URL}}

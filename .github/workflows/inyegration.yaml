@@ -11,11 +11,11 @@ jobs:
 
          - uses: SonarSource/sonarqube-scan-action@v5
            env:
-            SONA_TOKEN: ${{ secrets.SONAR_TOKEN }}
-            SONA_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-            with:
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+            SONAR_HOST_URL: ${{secrets.SONAR_HOST_URL}}
+           with:
             args: >
                 -Dsonar.projectKey=aula-devops
                 -Dsonar.projectName=aula-devops
                 -Dsonar.projectVersion=1.0.0
-                -Dsonar.sources=.  
+                -Dsonar.sources=.
